@@ -18,7 +18,7 @@ metadata:
   labels:
     app: connections
 spec:
-  replicas: 3
+  replicas: 7
   selector:
     matchLabels:
       app: connections
@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name: connections
-        image: cdavisafc/cloudnative-requestresilience-connections
+        image: alpine
 #        livenessProbe:
 #          httpGet:
 #            path: /healthz
