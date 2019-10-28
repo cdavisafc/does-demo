@@ -30,7 +30,8 @@ spec:
       containers:
       - name: mysql
         image: alpine
-        args: []
+        command: ["/bin/sh"]
+        args: ["-c", "while true; do echo hello; sleep 10;done"]
         securityContext:
           privileged: true
         env:

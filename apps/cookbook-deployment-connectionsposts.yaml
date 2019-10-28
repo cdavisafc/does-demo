@@ -31,6 +31,8 @@ spec:
       containers:
       - name: connectionsposts
         image: alpine
+        command: ["/bin/sh"]
+        args: ["-c", "while true; do echo hello; sleep 10;done"]
 #        resources:
 #          limits:
 #            memory: "2048Mi"

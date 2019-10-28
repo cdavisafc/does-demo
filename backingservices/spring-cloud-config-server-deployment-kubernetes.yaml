@@ -31,6 +31,8 @@ spec:
       containers:
       - name: sccs
         image: alpine
+        command: ["/bin/sh"]
+        args: ["-c", "while true; do echo hello; sleep 10;done"]
         env:
           - name: SPRING_CLOUD_CONFIG_SERVER_GIT_URI
             value: "https://github.com/cdavisafc/cloud-native-config.git"
