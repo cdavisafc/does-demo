@@ -46,6 +46,6 @@ spec:
           - name: SPRING_CLOUD_CONFIG_URI
             value: "http://sccs-svc:8888"
           - name: VERSIONING_TRIGGER
-            value: "1.0.0.1"
+            value: "1.0.0.3"
           - name: SERVER_TOMCAT_MAX-CONNECTIONS
             value: "5"
